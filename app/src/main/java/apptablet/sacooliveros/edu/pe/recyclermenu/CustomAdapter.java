@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -50,12 +51,18 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                         switch (item.getItemId()) {
                             case R.id.menu1:
                                 //handle menu1 click
+                                Toast.makeText(mCtx, "Literatura", Toast.LENGTH_SHORT).show();
+
                                 break;
                             case R.id.menu2:
                                 //handle menu2 click
+                                Toast.makeText(mCtx, "Matemática", Toast.LENGTH_SHORT).show();
                                 break;
                             case R.id.menu3:
                                 //handle menu3 click
+
+                                Toast.makeText(mCtx, "Ciencias", Toast.LENGTH_SHORT).show();
+
                                 break;
                         }
                         return false;
